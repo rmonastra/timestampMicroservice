@@ -1,5 +1,26 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 FreeCodeCamp's' API Timestamp Microservice Project
+  h2 Richard Monastra
+  h3 Microservice instructions:
+  ol 
+  li  I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: November 1, 2017)
+  br
+  li If it does, it returns both the Unix timestamp and the natural language form of that date.
+  br
+  li If it does not contain a date or Unix timestamp, it returns null for those properties.
+
+  h3 Example of URLs to get either the Unix or natural time format:
+  code 1.Natural time format: November 1, 2017
+  br
+  code 2.Unix time format: 1509508800
+  p: This To get the Unix time format date for a calendar(natural) date visit,  #[a(href="http://www.unixtimestamp.com/index.php") Epoch Unix Time Stamp Converter]
+  br
+  h3 Expected output should be in JSON:
+  code { "unix": 1496272471, "natural": "November 1, 2017" }
+
+
+  
+
+
